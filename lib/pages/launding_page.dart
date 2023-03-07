@@ -1,3 +1,4 @@
+import 'package:english/pages/home_page.dart';
 import 'package:english/values/app_assets.dart';
 import 'package:english/values/app_colors.dart';
 import 'package:english/values/app_styles.dart';
@@ -20,7 +21,7 @@ class LaudingPage extends StatelessWidget {
                 child: Container(
                   alignment: Alignment.centerLeft,
                   child: Text(
-                    'Welcome to to',
+                    'Welcome to',
                     style: AppTextStyles.h3,
                   ),
                 ),
@@ -54,7 +55,12 @@ class LaudingPage extends StatelessWidget {
                     child: RawMaterialButton(
                       fillColor: AppColors.lightBlue,
                       shape: CircleBorder(),
-                      onPressed: () => {},
+                      onPressed: () => {
+                        Navigator.pushAndRemoveUntil(
+                            context,
+                            MaterialPageRoute(builder: (a) => HomePage()),
+                            (route) => false)
+                      },
                       child: Image.asset(AppImages.imgNext),
                     ),
                   )),

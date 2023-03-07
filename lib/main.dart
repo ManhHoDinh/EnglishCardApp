@@ -1,6 +1,6 @@
 import 'package:english/pages/launding_page.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+import 'package:en_vi_dic/en_vi_dic.dart';
 
 void main() {
   runApp(const MyApp());
