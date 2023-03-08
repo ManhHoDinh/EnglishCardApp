@@ -1,8 +1,10 @@
+import 'package:english/models/quote.dart';
 import 'package:english/pages/launding_page.dart';
 import 'package:flutter/material.dart';
-import 'package:en_vi_dic/en_vi_dic.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Quotes().getAll();
   runApp(const MyApp());
 }
 

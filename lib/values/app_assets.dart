@@ -8,4 +8,5 @@ class AppImages {
   static const String imgMenu = imgPath + 'menu.png';
   static const String imgReLoad = imgPath + 'ReLoad.png';
   static const String imgNext = imgPath + 'right-arrow.png';
+  static const String imgLeft = imgPath + 'left-arrow.png';
 }
